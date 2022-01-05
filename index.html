@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>lrossi.xyz</title>
+
+	<meta charset="utf-8">
+	<meta name="keywords" content="lorenzo, rossi, lrossi, computer science, it, iot, music, composition, english, tech, linux">
+	<meta name="description" content="Lorenzo Rossi's website">
+	<meta name="author" content="Lorenzo Rossi">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed|Ubuntu+Mono&display=swap">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/code.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/music.css">
+	<link rel="icon" href="./media/favicon/favicon.ico">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin="">
+	<link rel="preload" href="js/winbox.bundle.js" as="script">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+	<script src="https://unpkg.com/typeit@8.1.0/dist/index.umd.js"></script>
+</head>
+<!--------------------------------------------------------------------->
+<body>
+	<div class="loading-spinner"></div>
+<!--------------------------------------------------------------------->
+	<header>
+		<nav class="navbar noselect">
+			<ul id="nav-list">
+				<li>
+					<a id="code">/code</a>
+				</li>
+				<li>
+					<a id="music">/music</a>
+				</li>
+				<li>
+					<a id="english">/english</a>
+				</li>
+				<li>
+					<a id="about">/about</a>
+				</li>
+				<li>
+					<a id="contacts">/contacts</a>
+				</li>
+				<li>
+					<a id="credits">/credits</a>
+				</li>
+			</ul>
+
+			<!--open hamburger menu-->
+			<a id="hamburger" onclick="openNav()">&#9776;</a>
+		</nav>
+
+		<!--curtain menu-->
+		<div id="curtain-menu" class="curtain-menu">
+			<div id="curtain-menu-content" class="curtain-menu-content">
+				<a class="close-button" onclick="closeNav()">&times;</a>
+				<a id="code-mobile" class="code" onclick="closeNav()">/code</a>
+				<a id="music-mobile" onclick="closeNav()">/music</a>
+				<a id="english-mobile" onclick="closeNav()">/english</a>
+				<a id="about-mobile" onclick="closeNav()">/about</a>
+				<a id="contacts-mobile" onclick="closeNav()">/contacts</a>
+				<a id="credits-mobile" onclick="closeNav()">/credits</a>
+			</div>
+		</div>
+		<!--end curtain menu-->
+	</header>
+<!--------------------------------------------------------------------->
+	<!--BACKSTORE: data to be shown in winboxes-->
+	<div id="backstore" style="display: none">
+		<!--code-->
+		<div class="content">
+			<div id="code-content" class="winbox-content">
+				<h2>code:$ <span class="blinking">|</span></h2>
+				
+				<p>
+					I am a graduate student in Computer Science at <a href="https://www.uniupo.it/en" target="_blank">University of Eastern Piedmont</a>.
+				</p>
+				<!--p>
+					Here is <a href="media/docs/rossi-lorenzo-thesis.pdf" target="_blank">my bachelor thesis</a> (in Italian).
+				</p-->
+				<h3>GitHub</h3>
+				<p>You can find most of the projects I have worked on at the following links:</p>
+				<p>
+					University: <a href="https://github.com/20031485" target="_blank">20031485</a>
+				</p>
+				<p>
+					Personal: <a href="https://github.com/lrossi93" target="_blank">lrossi93</a>
+				</p>
+			</div>
+		</div>
+
+		<!--music-->
+		<div class="content">
+			<div id="music-content" class="winbox-content">
+				<div class="tab-container">
+					<div class="tab-buttons">
+						<button id="button-spotify" class="tab-button" onclick="showTab(0);"><img src="media/social_logos/spotify_stencil.svg" onload="showTab(0);" class="tab-icon"></img></button>
+						<button id="button-soundcloud" class="tab-button" onclick="showTab(1);"><img src="media/social_logos/soundcloud_stencil.svg" class="tab-icon"></button>
+						<button id="button-musescore" class="tab-button" onclick="showTab(2);"><img src="media/social_logos/musescore.svg" class="tab-icon"></button>
+						<button id="button-youtube" class="tab-button" onclick="showTab(3);"><img src="media/social_logos/youtube_stencil.svg" class="tab-icon"></button>
+						<button id="button-shop" class="tab-button" onclick="showTab(4);"><img src="media/social_logos/shoppingcart_stencil.svg" class="tab-icon"></button>
+					</div>
+
+					<div id="tab-spotify" class="tab">
+						<h2><img src="media/social_logos/spotify_official_logo.svg"></h2>
+						<p>Spotify is the best-known audio streaming platform I use. You can listen to all my most significant works <a href="https://open.spotify.com/artist/4kilGmYROQxMyEAMmTP82v" target="_blank">here</a>.</p>
+
+						<p>Here are three excerpts of what you can find on my Spotify profile, included two tracks I wrote for an upcoming open-source voxel RPG named <a href="https://veloren.net/">Veloren</a>.</p>
+						
+						<div class="iframe-container">
+							<p class="spotify-p">
+								<!--div class="iframe-container">
+									<iframe class="iframe-spotify" src="https://open.spotify.com/embed/track/75WtxAVqm1TLSjjAB1XPjG" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+								</div-->
+								<iframe class="iframe-spotify" src="https://open.spotify.com/embed/track/75WtxAVqm1TLSjjAB1XPjG?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+							</p>
+
+							<p class="spotify-p">
+								<!--div class="iframe-container">
+									<iframe class="iframe-spotify" src="https://open.spotify.com/embed/track/3wCaiqTEo5R1AgACNpZXwW" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+								</div-->
+								<iframe class="iframe-spotify" src="https://open.spotify.com/embed/track/3wCaiqTEo5R1AgACNpZXwW?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+							</p>
+
+							<p class="spotify-p-last">
+								<!--div class="iframe-container">	
+									<iframe class="iframe-spotify" src="https://open.spotify.com/embed/track/66gegWewLm6kb4iAFBOi9J" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+								</div-->
+								<iframe class="iframe-spotify" src="https://open.spotify.com/embed/track/66gegWewLm6kb4iAFBOi9J?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+							</p>
+						</div>
+					</div>
+
+					<div id="tab-soundcloud" class="tab">
+						<h2><img src="media/social_logos/soundcloud_official_logo.svg"></h2>
+						<p>
+							<a href="https://soundcloud.com/" target="_blank">SoundCloud</a> is a free music streaming platform: the first one I have ever used.
+						</p>
+						<p>On my <a href="https://soundcloud.com/lorenzo_rossi" target="_blank">SoundCloud page</a>, you can find basically everything musical I have worked on so far.</p>
+
+						<p>That includes a collaboration with Trio Luzzani as transcriber and arranger, recorded live in 2016 and 2017.</p>
+						
+						<div class="container-soundcloud">
+							<iframe width="80%" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1145186560&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+						</div>
+					</div>
+
+					<div id="tab-musescore" class="tab">
+						<h2><img src="media/social_logos/musescore_official_logo.svg"></h2>
+						<p>
+							<a href="https://musescore.org/en" target="_blank">MuseScore</a> is the open-source music notation software I use for writing and roughly simulating my music.
+						</p>
+						<p>
+							If you are curious about how I write music, you can have a deep look at some of my scores on <a href="https://musescore.com/user/249046" target="_blank">my MuseScore profile</a>.
+						</p>
+					</div>
+
+					<div id="tab-youtube" class="tab">
+						<h2><img src="media/social_logos/youtube_official_logo.png"></h2>
+						<p>This is some of the content you may find on <a href="https://www.youtube.com/channel/UC8JQFz5EH4q9f5GrOSoj-xg" target="_blank">my YouTube channel</a>.
+						</p>
+						<p>Most of the clips are made with an open-source videoediting software named <a href="https://www.shotcut.org/" target="_blank">Shotcut</a>.</p>
+
+						<p>Here are a couple of excerpts taken from my channel: <a href="https://www.youtube.com/watch?v=ZWkLAiWfHbw" target="_blank">Tapion's Theme</a>, my most viewed video, and <a href="https://www.youtube.com/watch?v=7z8fw-PsOPE" target="_blank">Inner Flame March</a>, where the solo cello is played by <a href="https://www.linkedin.com/in/gabriele-luzzani/" target="_blank">Gabriele Luzzani</a> and recorded by <a href="https://www.linkedin.com/in/nicol%C3%B2-paracchini-90a537166/" target="_blank">Nicolò Paracchini</a>.</p>
+						<div class="iframe-container">
+							<p class="youtube-p">
+								<iframe class="iframe-youtube" src='https://www.youtube.com/embed/ZWkLAiWfHbw' frameborder='0' allowfullscreen></iframe>
+							</p>
+							<br>
+							<p class="youtube-p-last">
+								<iframe class="iframe-youtube" src='https://www.youtube.com/embed/7z8fw-PsOPE' frameborder='0' allowfullscreen></iframe>
+							</p>
+						</div>
+					</div>
+
+					<div id="tab-shop" class="tab">
+						<h2><img src="media/social_logos/shoppingcart_stencil.svg"></h2>
+						<p>
+							If decided you want to support me, first of all: thank you!
+						</p>
+						<p>My music is for sale on most of the best-known online music platforms. Here are some:</p>
+						
+						<p><a href="https://play.google.com/store/music/artist?id=Aciwka4czm2qbww3ibjsiew6dge" target="_blank">Google Play</a></p>
+						<p><a href="https://music.apple.com/us/artist/lorenzo-rossi/1483135914" target="_blank">iTunes</a></p>
+						<p><a href="https://www.deezer.com/us/artist/83055702" target="_blank">Deezer</a></p>
+					
+						<p>
+							If you cannot buy my music but you still wish to support me, you can do it for free by listening to it and sharing it.
+						</p>
+						<p>Thank you for visiting my website!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--english-->
+		<div class="content">
+			<div id="english-content" class="winbox-content">
+				<h2>english:$ <span class="blinking">|</span></h2>
+				<p>I am a <a href="https://www.cambridgeenglish.org/teaching-english/teaching-qualifications/celta/" target="_blank">CELTA</a> graduate from <a href="https://ihmilano.it/" target="_blank">IH Milan</a>.</p>
+				
+				<h3>experience</h3>
+
+				<p>I have taught English to students of every age and levels A1~B2, mostly preparing them to take language certificates released by <a href="https://www.cambridgeenglish.org/" target="_blank">Cambridge University Press &amp; Assessment</a> and <a href="https://www.trinitycollege.com/qualifications/english-language/GESE" target="_blank">Trinity College of London</a>.</p>
+				<p>More details about my working experience can be found in the section <a>/about</a>.</p>				
+				<!--p>
+					<kbd>This section is still under construction. It might be enriched/deleted in the future.</kbd>
+				</p-->
+			</div>
+		</div>
+
+		<!--about-->
+		<div class="content">
+			<div id="about-content" class="winbox-content">
+				<h2>about:$ <span class="blinking">|</span></h2>
+				<div class="picture">
+					<img class="profile" src="./media/profile/lorenzo-rossi-profile-picture.jpeg">
+				</div>
+				<p>Hi! My name is <a>Lorenzo Rossi</a> and I like doing various things.
+				</p>
+
+				<h3><b>tl;dr</b></h3>
+				<p>
+					Here is <a href="media/docs/rossi-lorenzo-cv-ita.pdf" target="_blank">my CV</a> (in Italian).
+				</p>
+
+
+				<h3>life</h3>
+				<p>
+					I was born in Galliate, a small town in the North of Italy, in 1993. I am currently still living here.
+				</p>
+
+				<h3>studies</h3>
+				<!--p>
+					I have studied (but never graduated in) Physics at <a href="https://www.unimi.it/en" target="_blank">University of Milan</a>.
+				</p-->
+				<p>
+					I am an undergraduate student in Composition at <a href="https://consno.it/" target="_blank">Novara's Conservatoire</a>.
+				</p>
+				<p>
+					I am a <a href="https://www.cambridgeenglish.org/teaching-english/teaching-qualifications/celta/" target="_blank">CELTA</a> graduate from <a href="https://ihmilano.it/" target="_blank">IH Milan</a>.
+				</p>
+				<p>
+					I am currently a graduate student in Computer Science at <a href="https://www.uniupo.it/en" target="_blank">University of Eastern Piedmont</a>.
+				</p>
+
+				<h3>work</h3>
+				<p>
+					I have worked as activity leader for <a href="https://www.oxfordinternational.com/" target="_blank">Oxford International Education Group</a> in Exeter (UK, Devon) in 2013.
+				</p>
+				<p>
+					I have composed, transcribed and arranged music for small ensembles and for computer orchestral simulations since 2015. Check the section <a>/music</a> for more details.
+				</p>
+				<p>
+					I have worked as invigilator and marshal at Cambridge certificate exam sessions and as English teacher for <a href="http://www.myopenschool.it/it/" target="_blank">My Open School for Cambridge</a>, a language centre based in Busto Arsizio (Varese, Italy), from 2017 to 2019.
+				</p>
+				<p>
+					I have worked as freelance software developer in summer 2021.
+				</p>
+				<p>
+					I am currently teaching Computer Science and English at <a href="http://www.scuolenovara.it/" target="_blank">Complesso Scolastico Paritario "Quintino Sella"</a> in Novara, while writing and playing music as a side hustle.
+				</p>
+
+				<h3>likes</h3>
+				<p>
+					I love being in the nature.
+				</p>
+				<p>
+					I am lately developing a radical passion for the Great Highland Bagpipe.
+				</p>
+				<p>
+					I love orchestral and metal music, especially when blended together with electronic or ethnic music.
+				</p>
+				<p>
+					If I had to choose a favourite composer, that would be J.S. Bach.
+				</p>
+				<p>
+					I am lazy enough to spend days trying to automatize a 10 minutes long manual computer task.
+				</p>
+			</div>
+		</div>
+
+		<!--contacts-->
+		<div class="content">
+			<div id="contacts-content" class="winbox-content">
+				<h2>contacts:$ <span class="blinking">|</span></h2>
+				<p>
+					<a href="mailto:lo.reds1993@gmail.com">lo.reds1993@gmail.com</a>
+				</p>
+			</div>
+		</div>
+
+		<!--credits-->
+		<div class="content">
+			<div id="credits-content" class="winbox-content">
+				<h2>credits:$ <span class="blinking">|</span></h2>
+				<p>
+					This awesome free open source web window manager named <a href="https://nextapps-de.github.io/winbox/" target="_blank">WinBox.js</a> was made by <a href="https://github.com/nextapps-de" target="_blank">Nextapps GmbH</a>.
+				</p>
+				<p>
+					All the logos I used in the footer come from either <a href="https://icons8.com" target="_blank" target="_blank">Icons8</a>, <a href="https://www.freepik.com" target="_blank">Freepik</a> or <a href="https://flaticon.com" target="_blank">FlatIcon</a>. 
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<h1 class="noselect">
+		<a id="lrossi" class="bold">lrossi:$ <em id="terminal-text"></em><span class="blinking">|</span></a>
+	</h1>
+
+<!--------------------------------------------------------------------->
+	<div class = "footer noselect">
+		<div class="social_logos">
+			<ul>
+				<li>
+					<a class="social_icon" href="https://github.com/lrossi93" target="_blank">
+						<img src="./media/social_logos/github.svg">
+					</a>
+				</li>
+				<li>
+					<a class="social_icon" href="https://open.spotify.com/artist/4kilGmYROQxMyEAMmTP82v" target="_blank">
+						<img src="./media/social_logos/spotify.svg">
+					</a>
+				</li>
+				<li>
+					<a class="social_icon" href="https://soundcloud.com/lorenzo_rossi" target="_blank">
+						<img src="./media/social_logos/soundcloud.svg">
+					</a>
+				</li>
+				<li>
+					<a class="social_icon" href="https://musescore.com/user/249046" target="_blank">
+						<img src="./media/social_logos/musescore.png">
+					</a>
+				</li>
+				<li>
+					<a class="social_icon" href="https://www.youtube.com/channel/UC8JQFz5EH4q9f5GrOSoj-xg" target="_blank">
+						<img src="./media/social_logos/youtube.svg">
+					</a>
+				</li>
+				<li>
+					<a class="social_icon" href="https://www.linkedin.com/in/lrossi1993/" target="_blank">
+						<img src="./media/social_logos/linkedin.png">
+					</a>
+				</li>
+				<li>
+					<a class="social_icon" href="https://www.facebook.com/lorenzorossi93music/" target="_blank">
+						<img src="./media/social_logos/facebook.svg">
+					</a>
+				</li>
+				<li>
+					<a class="social_icon" href="https://www.instagram.com/lrossi.tar.gz/" target="_blank">
+						<img src="./media/social_logos/instagram.svg">
+					</a>
+				</li>
+				<li>
+					<a class="social_icon" href="https://twitter.com/LoReds93" target="_blank">
+						<img src="./media/social_logos/twitter.svg">
+					</a>
+				</li>
+			</ul>
+			<p>&copy;2022 - coded by <a>lorenzo rossi</a></p>
+		</div>
+	</div>
+<!--------------------------------------------------------------------->
+	<script type="text/javascript" src="js/winbox.bundle.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/code.js"></script>
+	<script type="text/javascript" src="js/music.js"></script>
+	<script type="text/javascript" src="js/english.js"></script>
+	<script type="text/javascript" src="js/about.js"></script>
+	<script type="text/javascript" src="js/contacts.js"></script>
+	<script type="text/javascript" src="js/credits.js"></script>
+	<script type="text/javascript" src="js/loader.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

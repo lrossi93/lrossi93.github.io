@@ -1,0 +1,75 @@
+/* BEGIN STRIPES */
+/*.stripes{
+	height: auto;
+	display: grid;
+	grid-template-rows: auto auto auto;
+}*/
+
+.horizontal-stripe{
+	height: 30%;
+}
+
+.horizontal-stripe .link{
+	height: 30%;
+	opacity: 70%;
+	filter: blur(8px);
+  	-webkit-filter: blur(8px);
+	transition: all 0.3s ease-in-out;
+}
+/*
+.horizontal-stripe h1{
+	opacity: 100%;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	filter: blur(0);
+  	-webkit-filter: blur(0);
+}
+
+.horizontal-stripe h2{
+	margin: 0;
+}
+*/
+div.horizontal-stripe .link :hover{
+	opacity: 100%;
+	filter: blur(0);
+  	-webkit-filter: blur(0);
+}
+/*
+#home-stripe{
+	background-color: #111111;
+	grid-row: 1/2;
+	opacity: 100%;
+}
+*/
+#computer-science-stripe{
+	background-image: url("../media/computer_science.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #111111;
+	grid-row: 2/3;
+}
+/*
+
+#music-stripe{
+	background-image: url("../media/music2.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #101010;
+	grid-row: 3/4;
+	
+}
+
+#english-stripe{
+	background-image: url("../media/english2.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #111111;
+	grid-row: 4/5;
+}*/
+/* END STRIPES */

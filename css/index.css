@@ -1,0 +1,37 @@
+/* BEGIN STRIPES */
+.horizontal-stripe{
+	height: 15vh;
+	width: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#home-stripe{
+	background-color: #111111;
+	opacity: 100%;
+	height: 10vh;
+}
+
+#home-stripe:hover{
+	opacity: 100%;
+}
+
+#computer-science-stripe{
+	background-image: url("../media/computer_science.jpg");
+	background-color: #111111;
+	opacity: 70%;
+}
+
+#music-stripe{
+	background-image: url("../media/music2.jpg");
+	background-color: #101010;
+	
+}
+
+#english-stripe{
+	background-image: url("../media/english2.jpg");
+	background-color: #111111;
+}
+/* END STRIPES */
