@@ -21,7 +21,7 @@ var codeSettings = {
 	bottom: "90px",
 	mount: codeContent,
 	onclose: function(){
-		open = false;
+		openCode = false;
 		code.classList.remove("active");
 		codeMobile.classList.remove("active");
 	}
