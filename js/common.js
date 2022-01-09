@@ -57,7 +57,7 @@ var strings = [
 	'my favourite superhero is spiderman',
 	'my favourite superpower is green lantern\'s',
 	'not choosing is a choice',
-	'as a master procrastinator, i will tell you how to quit procrastinating... tomorrow',
+//	'as a master procrastinator, i will tell you how to quit procrastinating... tomorrow',
 	'turtoises are not really the most brilliant animals on earth',
 	'sometimes, i go play the bagpipe in the middle of the countryside',
 	'if you haven\'t read kenshiro, we cannot be friends',
