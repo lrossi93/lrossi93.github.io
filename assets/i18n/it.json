@@ -47,7 +47,6 @@
     "Static website for promoting Doctor Alberto Toscani’s activity as élite nutrition biologist, and his nutrition studio.": "Sito statico per la promozione dell’attività di Alberto Toscani, biologo nutrizionista sportivo d’élite, e del suo studio nutrizionale.",
     "Static website for promoting Marco Zanchetta’s activities as boxing teacher and personal trainer.": "Sito statico per promuovere le attività di Marco Zanchetta, insegnante di boxe e personal trainer.",
     "Do you have a project that you don’t know how to bring to life?": "Hai un progetto che non sai come portare alla luce?",
-    "Here is a short list of the technologies I have learnt across the years.": "Ecco un breve elenco delle tecnologie che ho approfondito negli anni.",
     "is an open source framework developed by Google and based on Typescript for developing modern web applications, accompanied by": "è un framework open source sviluppato da Google e basato su TypeScript per la creazione di applicazioni web moderne, accompagnato da",
     "a library of UI components in the style of Material Design.": "una libreria di componenti UI in stile Material Design.",
     "Projects": "Progetti",
@@ -102,7 +101,7 @@
     "Stay tuned! More updates will be available soon!": "Restate sintonizzati! Presto saranno disponibili degli aggiornamenti!",
     "is a band of Scottish bagpipes and drums that surfed stages from the most important Celtic festivals in Italy, with a repertoire that joins contemporaneousness and tradition.": "è una formazione di cornamuse e percussioni scozzesi che ha solcato i palchi dei festival di musica celtica più importanti d'Italia con un repertorio che unisce contemporaneità e tradizione.",
     "I've been part of Celtic Knot since 2022 as piper, keyboardist and arranger of a part of the repertoire.": "Faccio parte di Celtic Knot dal 2022 come piper, tastierista e arrangiatore di parte del repertorio.",
-    "Much more than a tribute band": "Molto più di una tribute band:",
+    "Much more than a tribute band:": "Molto più di una tribute band:",
     "is the continuous and meticulous research for the authentic AC/DC sound, seasoned with an overwhelming scenic presence.": "è la continua e meticolosa ricerca dell'autentico sound degli AC/DC, condita con una presenza scenica travolgente.",
     "Since 2022, my pipes and I support HTH to make their - already unforgettable - shows even more spectacular.": "Dal 2022, la mia cornamusa ed io affianchiamo HTH per rendere ancora più spettacolari i loro show già indimenticabili.",
     "Are you looking for the perfect soundtrack to your event?": "Cerchi la colonna sonora adatta al tuo evento?",
@@ -114,5 +113,10 @@
     "I have had the honour to contribute to this project with my pipes and a few arrangements.": "Ho avuto l'onore di contribuire a questo progetto con la mia cornamusa e con alcuni arrangiamenti.",
     "An improvised Scottish ceilidh band with Andrea Sigismondi on strings and Simone Colzani on percussion.": "Scottish ceilidh band improvvisata con Andrea Sigismondi alle corde e Simone Colzani alle percussioni.",
     "My first approach to trad, to which I contributed with great highland bagpipes, smallpipes, arrangements and original tunes.": "Il mio primo approccio al trad, a cui ho contribuito con cornamusa, smallpipe, arrangiamenti e brani originali.",
-    "I strongly support the usage of free and open source software.": "Sono fortemente a favore dell’utilizzo di software libero e open source."
+    "I strongly support the usage of free and open source software.": "Sono fortemente a favore dell’utilizzo di software libero e open source.",
+    "a Material Design styled UI component library.":"una libreria di componenti UI in stile Material Design.",
+    "Here is a short list of the technologies I have learnt across the years.": "Ecco un breve elenco delle tecnologie che ho approfondito negli anni.",
+    "gigs": "esibizioni",
+    "Some parts of this website are still under construction. If you are looking for something that is not here anymore, check on my": "Alcune parti di questo sito sono ancora in costruzione. Se stai cercando qualcosa che c'era e non c'è più, potresti trovarlo nel mio",
+    "old website": "vecchio sito"
 }
