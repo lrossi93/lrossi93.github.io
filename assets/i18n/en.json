@@ -1,20 +1,50 @@
 {
-    "Ciao, benvenuti sul mio sito!": "Hi, welcome to my website!",
-    "home": "home",
-    "code": "code",
-    "music": "music",
-    "about": "about",
-    "contacts": "contacts",
-    "english": "english",
-    "language": "language",
-    "services": "services",
-    "Page not found": "Page not found",
-    "Solo piper": "Solo piper",
-    "Compositions and arrangements": "Compositions and arrangements",
-    "Bands": "Bands",
-    "Collaborations": "Collaborations",
-    "Gear": "Gear",
-    "I discovered music by playing with my mother's old vertical piano when I still was a toddler. I fell in love with it at the age of 11 and, from then on, I have never left it.": "I discovered music by playing with my mother's old vertical piano when I still was a toddler. I fell in love with it at the age of 11 and, from then on, I have never left it.",
-    "Here is an overview of my musical activities.": "Here is an overview of my musical activities.",
-    "More": "Altro"
+  "Ciao, benvenuti sul mio sito!": "Hi, welcome to my website!",
+  "home": "home",
+  "code": "code",
+  "music": "music",
+  "about": "about",
+  "contacts": "contacts",
+  "english": "english",
+  "language": "language",
+  "services": "services",
+  "Page not found": "Page not found",
+  "Solo piper": "Solo piper",
+  "Compositions and arrangements": "Compositions and arrangements",
+  "Bands": "Bands",
+  "Collaborations": "Collaborations",
+  "Gear": "Gear",
+  "I discovered music by playing with my mother's old vertical piano when I still was a toddler. I fell in love with it at the age of 11 and, from then on, I have never left it.": "I discovered music by playing with my mother's old vertical piano when I still was a toddler. I fell in love with it at the age of 11 and, from then on, I have never left it.",
+  "Here is an overview of my musical activities.": "Here is an overview of my musical activities.",
+  "More": "Altro",
+  "piping_1": "Scottish Bagpipes for Events",
+  "piping_2": "Live music to make every moment unique",
+  "piping_3": "Events - Ceremonies - Lessons",
+
+  "piping_4": "Events & Ceremonies",
+  "piping_5": "I perform at weddings, funerals, religious ceremonies, official celebrations and special occasions. Each performance is customized according to the event type and the key moments of the day.",
+
+  "piping_6": "Private & Corporate Events",
+  "piping_7": "I am available for private events, inaugurations, historical reenactments, sporting events and corporate occasions. The sound of the bagpipes adds strong emotional and visual impact to any context.",
+
+  "piping_8": "One-to-One Lessons",
+  "piping_9": "I offer individual online and in-person lessons for beginners and intermediate players. We work on technique, breathing, traditional repertoire, and full musical preparation.",
+
+  "piping_10": "Training & Certifications",
+  "piping_11": "I hold the Piping and Drumming Qualifications Board Level 5 certification, one of the most recognized international standards for Scottish bagpipes. I have performed at numerous public, sporting, and ceremonial events both alone and in various musical formations. I am constantly studying under the guidance of my teachers Alberto Massi (PDQB Level 8) and Wilson Brown (Glasgow, National Piping Centre).",
+
+  "piping_12": "Reviews",
+  "piping_13": "You can find some reviews of my piping services by clicking on the button below or visiting my profile on",
+
+  "piping_14": "How It Works",
+  "piping_15": "Contact me to check my availability",
+  "piping_16": "We will choose the right music and schedule my performance together",
+  "piping_17": "I will arrive on site independently and on time",
+  "piping_18": "Live acoutsic performance across the agreed schedule",
+
+  "piping_19": "Contacts",
+  "piping_20": "Write me without obligation to check availability for your date.",
+
+  "piping_call_to_action": "Would you like a Scottish bagpipe performance",
+  "piping_call_to_action_button": "Contact me"
 }
